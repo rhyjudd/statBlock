@@ -55,7 +55,7 @@ class App extends React.Component{
   }
   render(){
     return  (    
-      <div>
+      <div className="container">
         <h1>DnD stat generator</h1>
         <h3>Strength:     {this.state.strength}</h3>
         <h3>Dexterity:    {this.state.dexterity}</h3>
@@ -63,6 +63,7 @@ class App extends React.Component{
         <h3>Intelligence: {this.state.intelligence}</h3>
         <h3>Wisdom:       {this.state.wisdom}</h3>
         <h3>Charisma:     {this.state.charisma}</h3>
+        
         <button onClick={this.rollStat}>Roll Stat</button>
       </div>
     );
