@@ -78,12 +78,12 @@ class App extends React.Component{
       <div className="container">
         <h1>DnD stat generator</h1>
         <h3>Strength:     {this.state.strength}, Modifier: {this.state.strMod}</h3>
-        <h3>Dexterity:    {this.state.dexterity}, Modifier: {this.state.dexMoD}</h3>
+        <h3>Dexterity:    {this.state.dexterity}, Modifier: {this.state.dexMod}</h3>
         <h3>Constitution: {this.state.constitution}, Modifier: {this.state.conMod}</h3>
         <h3>Intelligence: {this.state.intelligence}, Modifier: {this.state.intMod}</h3>
         <h3>Wisdom:       {this.state.wisdom}, Modifier: {this.state.wisMod}</h3>
         <h3>Charisma:     {this.state.charisma}, Modifier: {this.state.chaMod}</h3>
-        
+        <h3>AC: {this.state.dexMod + 10}</h3>
         <button onClick={this.rollStat}>Roll Stat</button>
       </div>
     );
